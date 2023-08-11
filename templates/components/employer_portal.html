@@ -1,0 +1,56 @@
+{% extends "default/index.html" %}
+{% load static %}
+{% block content %}
+
+
+<!-- Content -->
+<div class="container">
+  <div id="left">
+    <div id="signin">
+      <form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+          <label>Company Name</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Designation</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Mobile</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Your mail</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Website</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Upload your order</label><br>
+          <button type="button">chose file</button> no file chosen
+          <br>Max file size:25MB pdf, doc, docx
+        </div>
+        <div>
+          <br>
+          <label>Your message (optional)</label>
+          <input type="text" class="text-input" style="height: 75px;" />
+        </div>
+        <button type="submit" class="primary-btn">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <div id="right" style="display: flex; flex-direction: column;">
+      <div class="emply-form-req"><h1>Send Your Requirements</h1></div>
+      <div><img src="{% static 'images/Employment-Icon-Transparent-Background.png' %}" alt=""></div>
+  </div>
+</div>
+       
+
+{% endblock %}

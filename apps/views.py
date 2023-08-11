@@ -18,6 +18,10 @@ def Mission_vision(request):
     return render(request,'components/Mission_vision.html')
 def Testimonials(request):
     return render(request, 'components/testimonials.html')  
+def apply_job(request):
+    return render(request, 'components/apply_job.html')  
+def employer_portal(request):
+    return render(request, 'components/employer_portal.html')  
 def HR_career(request):
     return render(request,'our_services/HR_career.html')
 def Education(request):

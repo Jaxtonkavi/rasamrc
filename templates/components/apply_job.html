@@ -1,0 +1,49 @@
+{% extends "default/index.html" %}
+{% load static %}
+{% block content %}
+
+
+<!-- Content -->
+<div class="container">
+  <div id="left">
+    <div id="signin">
+      <form>
+        <div>
+        </div>
+        <div>
+          <label>Name</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Mobile</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Applying for</label>
+          <input type="text" class="text-input" />
+        </div>
+        <div>
+          <label>Upload your resume/CV</label><br>
+          <button type="button">chose file</button> no file chosen
+          <br>Max file size:25MB pdf, doc, docx
+        </div>
+        <div>
+          <br>
+          <label>Your message (optional)</label>
+          <input type="text" class="text-input" style="height: 75px;" />
+        </div>
+        <button type="submit" class="primary-btn">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <div id="right">
+    <img src="{% static 'images/login_bg_img-removebg-preview.png' %}" alt="">
+  </div>
+</div>
+       
+
+{% endblock %}
