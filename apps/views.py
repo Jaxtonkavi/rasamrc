@@ -22,6 +22,8 @@ def apply_job(request):
     return render(request, 'components/apply_job.html')  
 def employer_portal(request):
     return render(request, 'components/employer_portal.html')  
+def career(request):
+    return render(request, 'components/career.html')  
 def HR_career(request):
     return render(request,'our_services/HR_career.html')
 def Education(request):

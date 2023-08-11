@@ -28,6 +28,7 @@ urlpatterns = [
     re_path(r'^testimonials/$', views.Testimonials, name='Testimonials'),
     re_path(r'^apply_job/$', views.apply_job, name='apply_job'),
     re_path(r'^employer_portal/$', views.employer_portal, name='employer_portal'),
+    re_path(r'^career/$', views.career, name='career'),
     re_path(r'^HR_career/$', views.HR_career, name='HR_career'),
     re_path(r'^Education/$', views.Education, name='Education'),
     re_path(r'^software/$', views.software, name='software'),
