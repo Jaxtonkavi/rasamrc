@@ -1,0 +1,62 @@
+{% load static %}
+
+<nav class="header position_f align_c display_f font_family_R">
+    <div style="width: 8%">
+        <img src="{% static 'images/rasa_logo.webp' %}" alt="" class="main_logo">
+    </div>
+    <div style="width: 62%">  
+        <ul class="top_nav_list display_f align_c">  
+            <li class="display_i">
+                <a href="{% url 'Main_page' %}" class="top_nav_list_items">Home</a>
+            </li>
+            <li class="dropdown display_i">
+                <a href="javascript:void(0);" class="top_nav_list_items dropbtn">About <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'who_we_are' %}">Who We Are</a>
+                    <a href="{% url 'ceo_message' %}">CEO message</a>
+                    <a href="{% url 'coo_message' %}">COO message</a>
+                    <a href="{% url 'ocv' %}">Our Core Values</a>
+                    <a href="{% url 'mission_vision' %}">Mission & Vision</a>
+                </div>
+            </li>
+            <li class="dropdown display_i">
+                <a href="javascript:void(0);" class="top_nav_list_items dropbtn">Our Services <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'HR_career' %}">HD & Career Outsourcing</a>
+                    <a href="{% url 'Education' %}">Education Stratageme</a>
+                    <a href="{% url 'software' %}">Software & IT</a>
+                    <a href="{% url 'operations' %}">Operations Management</a>
+                    <a href="{% url 'BTD' %}">Business Transformation & Development</a>
+                    <a href="#service3">Legal Arbitration & Acquiescence</a>
+                </div>
+            </li>
+            <li class="display_i">
+                <a href="#Our Patrons" class="top_nav_list_items">Our Patrons</a>
+            </li>
+            <li class="dropdown display_i">
+                <a href="javascript:void(0);" class="top_nav_list_items dropbtn">What's NEW <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#service1">Current Vacancies</a>
+                    <a href="#service2">Job Seeker's Portal</a>
+                    <a href="#service3">Employer's Portal</a>
+                    <a href="#service3">Career @ RASA</a>
+                    <a href="#service3">Photo Gallery</a>
+                    <a href="#service3">News Letter</a>
+                </div>
+            </li>
+            <li class="display_i">
+                <a href="{% url 'Testimonials' %}"" class="top_nav_list_items">Testimonials</a>
+            </li>
+            <li class="display_i">
+                <a href="#Blog" class="top_nav_list_items">Blog</a>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 30%;" class="display_f justify_e align_c">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="search..." name="" />
+            <a href="#" class="search-icon"><i class="fa fa-search" style="margin-left: 7px;"></i></a>
+        </div>
+    </div>
+    
+</nav>

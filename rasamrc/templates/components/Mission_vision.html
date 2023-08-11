@@ -1,0 +1,37 @@
+{% extends "default/index.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Content -->
+<div class="Common_content"style="background-color: #0d0038;">
+    <div class='details_content'>
+        <div class="ceo_title font_family_R display_f justify_c">
+            <p>Mission & Vision</p>
+        </div>
+        <div  class="detail_1">
+            <div class="heading_title">
+                <p style="color: yellow;">Vision</p>
+            </div>
+
+            <div class="font_family_R color_w" >
+               <p>We SYMBOLIZE to be an innovative solution provider in the entire consulting ecosystem.</p>
+            </div>
+            <div class="heading_title">
+                <p style="color: yellow;">Mission</p>
+            </div>
+            
+            <div class="font_family_R color_w">
+               <p>To OUTCLASS as universal customary solutions sourcing with enduring partnership
+               </p>
+            </div>
+        </div>              
+    </div>
+
+    <div class="Side_profile position_f">
+        <div class="profile_circle">
+            <img src="{% static 'images/ceo_img.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

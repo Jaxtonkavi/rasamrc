@@ -1,0 +1,657 @@
+/******** General CSS *******/
+.display_f{
+	display: flex;
+}
+.display_b{
+	display: block;
+}
+.justify_c{
+	justify-content: center;
+}
+.justify_e{
+	justify-content: flex-end;
+}
+.justify_sa{
+	justify-content: space-around;
+}
+.justify_sb{
+	justify-content: space-between;
+}
+.justify_se{
+	justify-content: space-evenly;
+}
+.align_c{
+	align-items: center;
+}
+.padding_d{
+	padding:0;
+}
+.padding_20{
+  padding: 20px;
+}
+.margin_d{
+	margin: 0;
+}
+.position_r{
+	position: relative;
+}
+.position_f{
+	position: fixed;
+}
+.position_a{
+	position: absolute;
+}
+.flex_c{
+	flex-direction: column;
+}
+.decoration_none{
+	text-decoration: none;
+}
+.display_i{
+	display: inline;
+}
+.font_family_R{
+	font-family: 'Roboto';
+}
+
+.fa-brands{
+  display: none;
+}
+.testimonials_name{
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: rgb(180, 153, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.designation{
+  color: white;
+
+}
+
+.testi_img{
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial_title{
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+  margin: 0;
+}
+.box_shadow{
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0px 2px 12px -2px white;
+}
+
+/******** General CSS END *******/
+
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  /* Add other variations and formats as needed */
+}
+
+
+/* Reset default styles for ul and li elements */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+  top: 70px;
+  height: 545px;
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.main_logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*****carosal*****/
+.mySlides {
+  width: 100%;
+  height: 545px;
+}
+
+
+/* Slide Dots CSS Start */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  top: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 255) 0px 0px 11px 3px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Slide Dots CSS END */
+
+
+
+/* Vaccancies CSS Start */
+.bottom_navbar {
+  width: 500px;
+  height: 25px;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: rgba(20, 211, 313, 0.3);
+  top: -50px;
+  margin-left: 400px;
+}
+
+.arrow_mark {
+  width: 50px;
+  height: 45px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #000000c2;
+  float: right;
+}
+
+.arrow_mark {
+  width: 50px;
+  height: 45px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #000000c2;
+  float: right;
+  color: white;
+  font-size: 24px;
+
+}
+
+.bottom_navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  width: fit-content;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+/* Vaccancies CSS END */
+
+
+.search-input::placeholder {
+  font-size: 16px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  align-items: center;
+}
+
+
+
+.slide {
+  padding: 0;
+  margin: 0;
+  animation: marqueeAnimation 5s infinite linear;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel.slide {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.carousel.slide .bg_image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Additional styles for the slide animation */
+.carousel.slide .active {
+  display: block;
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/******dropdown content*******/
+
+.dropdown {
+  position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: linear-gradient(to bottom, #01a7cc, #00759c);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  top: 35px;
+
+
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  /* background-color: transparent; */
+  color: black;
+  background-color: rgba(93, 205, 250, 0.356);
+
+}
+
+/* Show the dropdown when hovering over the parent */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* circle icon CSS Start */
+.circle_icon {
+  font-size: 35px;
+  color: #0058ff;
+}
+/* circle icon CSS END */
+
+
+/* Our Services six boxes CSS Start*/
+.normal-div-border_1 {
+  width: 350px;
+  height: 200px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 20px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: 0.1rem solid #e3e1e1;
+  background-color: #f5f5f5;
+  padding: 90px 25px 25px 25px;
+  transition: transform 0.8s ease;
+}
+.row_1 {
+  justify-content: space-evenly;
+  margin-top: 70px;
+
+}
+
+.row_2 {
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+
+/* Our services Circle */
+.hovicon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: -55px;
+  left: 135px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 20px 1px #a1a09f
+}
+
+.hovicon.auto-width {
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+
+.hovicon:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.hovicon:before {
+
+  font-size: 48px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.hovicon.effect-8 {
+  background: #f5f5f5;
+  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+  -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.hovicon.effect-8:after {
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.hovicon.effect-8:hover {
+  background: #f5f5f5;
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+  color: #c7c7c7;
+  ;
+}
+
+.hovicon.effect-8:hover i {
+  color: #0058ff;
+}
+
+.hovicon.effect-8:hover:after {
+  -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+  -moz-animation: sonarEffect 1.3s ease-out 75ms;
+  animation: sonarEffect 1.3s ease-out 75ms;
+}
+
+@-webkit-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -moz-transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+/* Our Services six boxes CSS Start */
+
+
+
+/* WaterDrop  */
+
+#waterdrop {
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0d0038;
+
+}
+
+
+
+
+.our_patrons {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  font-family: 'Roboto';
+}
+
+.patron_title {
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.patron_content {
+  padding: 10px 10px;
+}
+
+
+
+
+/* RASA Logo */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  position: relative;
+  --card-height: 100px;
+  --card-width: 170px;
+}
+
+
+
+.ml9 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-align: center;
+  height: 3.5rem;
+}
+
+.ml9 .text-wrapper {
+  /* padding-right: 0.05em; */
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+}
+
+
+.x:nth-child(1) {
+  color: red !important;
+}
+
+.x:nth-child(2) {
+  color: green !important;
+}
+
+.x:nth-child(3) {
+  color: yellow !important;
+}
+
+.x:nth-child(4) {
+  color: blue !important;
+}
+
+
+.serv_title {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec_text p {
+  padding: 0;
+  color: rgb(3, 96, 150);
+  line-height: normal;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  width: fit-content;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  margin: 16px 0px 5px 0px;
+}
+
+.serv_title p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: brown;
+  font-size: 20px;
+  text-align: center;
+  line-height: normal;
+
+}
+
+.description p {
+  padding: 0;
+  line-height: normal;
+  font-family: 'Roboto';
+  margin-top: 6px;
+  display: flex;
+  width: fit-content;
+
+}
+
+/* .Main_zone{
+  background-color: white;
+  width: 700px;
+  margin-left: 100px;
+} */
+
+.bubble {
+  background-color: rgba(214, 0, 0, 0.5); /* Semi-transparent white */
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+  width: 250px;
+  height: 250px;
+  left: -45px;
+  top: 20px;
+}
+/* .bubble_1{
+  background-image: linear-gradient(to bottom, #01a7cc, #00759c); 
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+  width: 95px;
+  height: 95px;
+  top: 100px;
+  left: 200px;
+
+}
+
+.bubble_btm{
+  background-color: rgba(214, 0, 0, 0.5); 
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+  width: 250px;
+  height: 250px;
+  top: 20px;
+  bottom: 0;
+
+} */
+.Main_content{
+width: 100%;
+height: auto;
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
